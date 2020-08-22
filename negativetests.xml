@@ -1,0 +1,7 @@
+<suite name="NegativeFunctionalTests" verbose="1">
+    <test name="SignInTests">
+        <classes>
+            <class name="pagefactory.tests.SignInTests"></class>
+        </classes>
+    </test>
+</suite>

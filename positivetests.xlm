@@ -1,0 +1,17 @@
+<suite name="PositiveFunctionalTests" verbose="1">
+    <test name="AddToCartTests">
+        <classes>
+            <class name="pagefactory.tests.AddToCartTests"></class>
+        </classes>
+    </test>
+    <test name="SearchTests">
+        <classes>
+            <class name="pagefactory.tests.SearchTests"></class>
+        </classes>
+    </test>
+    <test name="ZoomFunctionTests">
+        <classes>
+            <class name="pagefactory.tests.ZoomFunctionTests"></class>
+        </classes>
+    </test>
+</suite>
