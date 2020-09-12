@@ -18,7 +18,7 @@ public class CartPage extends BasePage {
     @FindBy(xpath = "//a[@class='a-dropdown-link'][contains(text(),'1')]")
     private WebElement deductOneProductButton;
 
-    public CartPage (WebDriver driver) {
+    public CartPage(WebDriver driver) {
         super(driver);
     }
 
@@ -30,7 +30,11 @@ public class CartPage extends BasePage {
         quantityButton.click();
     }
 
-    public void clickOnAddOneMoreProductButton() {addOneMoreProductButton.click(); }
+    public void clickOnAddOneMoreProductButton() {
+        addOneMoreProductButton.click();
+    }
 
-    public void clickOnDeductProductButton() {deductOneProductButton.click(); }
+    public void clickOnDeductProductButton() {
+        deductOneProductButton.click();
+    }
 }

@@ -19,13 +19,13 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[@id='nav-cart']")
     private WebElement cartButton;
 
-    @FindBy(xpath ="//a[@aria-label='Amazon']")
+    @FindBy(xpath = "//a[@aria-label='Amazon']")
     private WebElement goToHomeButton;
 
-    @FindBy(xpath =" //a[@role]/i[@class='hm-icon nav-sprite']")
+    @FindBy(xpath = " //a[@role]/i[@class='hm-icon nav-sprite']")
     private WebElement hamburgerButton;
 
-    @FindBy(xpath ="//li/a[contains(@href,'signin')]")
+    @FindBy(xpath = "//li/a[contains(@href,'signin')]")
     private WebElement signInButton;
 
     @FindBy(xpath = "//div/ul[contains(@class,'hmenu-visible')]")
@@ -51,7 +51,9 @@ public class HomePage extends BasePage {
         cartButton.click();
     }
 
-    public void clickOnGoToHomeButton() { goToHomeButton.click();    }
+    public void clickOnGoToHomeButton() {
+        goToHomeButton.click();
+    }
 
     public void clickOnhamburgerButton() {
         hamburgerButton.click();

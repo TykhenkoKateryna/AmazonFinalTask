@@ -6,18 +6,18 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class ProductPage extends BasePage{
+public class ProductPage extends BasePage {
 
     @FindBy(xpath = "//input[@id='add-to-cart-button']")
     private WebElement addToCartButton;
 
-    @FindBy(xpath ="//div/img[contains(@alt,'Connector')]")
+    @FindBy(xpath = "//div/img[contains(@alt,'Connector')]")
     private WebElement zoomProductButton;
 
-    @FindBy(xpath ="//div/img[@class='fullscreen']")
+    @FindBy(xpath = "//div/img[@class='fullscreen']")
     private WebElement zoomFullscreenProductButton;
 
-    public ProductPage (WebDriver driver) {
+    public ProductPage(WebDriver driver) {
         super(driver);
     }
 
@@ -25,8 +25,12 @@ public class ProductPage extends BasePage{
         addToCartButton.click();
     }
 
-    public void clickOnZoomProductButton() { zoomProductButton.click();    }
+    public void clickOnZoomProductButton() {
+        zoomProductButton.click();
+    }
 
-    public WebElement getzoomFullscreenProductButton() { return zoomFullscreenProductButton; }
+    public WebElement getzoomFullscreenProductButton() {
+        return zoomFullscreenProductButton;
+    }
 
 }

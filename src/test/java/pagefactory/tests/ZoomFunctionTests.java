@@ -1,9 +1,10 @@
 package pagefactory.tests;
 
 import org.testng.annotations.Test;
+
 import static org.testng.Assert.*;
 
-public class ZoomFunctionTests extends BaseTest{
+public class ZoomFunctionTests extends BaseTest {
 
     private String SEARCH_KEYWORD = "Apple EarPods with Lightning Connector - White";
 
